@@ -20,8 +20,11 @@ public class CategoryService {
 	// Save Category
 	public CategoryDto createCategory(CategoryDto categoryDto) {
 		Category category = this.modelMapper.map(categoryDto, Category.class);
+		System.out.println(category);
 		Category savedCategory = this.categoryRepo.save(category);
-		return this.modelMapper.map(savedCategory, CategoryDto.class);
+		System.out.println(savedCategory);
+
+		return this.modelMapper.map(savedCategory, CategoryDto.class );
 
 	}
 

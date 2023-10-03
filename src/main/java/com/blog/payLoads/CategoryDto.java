@@ -24,6 +24,11 @@ public class CategoryDto {
 	public void setCategoryDescription(String categoryDescription) {
 		this.categoryDescription = categoryDescription;
 	}
+	@Override
+	public String toString() {
+		return "CategoryDto [categoryId=" + categoryId + ", categoryTitle=" + categoryTitle + ", categoryDescription="
+				+ categoryDescription + "]";
+	}
 	
 	
 }
